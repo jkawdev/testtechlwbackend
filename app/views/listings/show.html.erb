@@ -1,0 +1,5 @@
+<h1>Votre future location</h1>
+<%= @listing.num_rooms %>
+
+<%= link_to "Delete", listing_path(@listing), data: {turbo_method: :delete, turbo_confirm: "Etes-vous sûr?"}  %>
+<%= link_to "Retour à la liste", listings_path %>
