@@ -17,7 +17,7 @@ class ListingsController < ApplicationController
     if @listing.save
       redirect_to listing_path(@listing)
     else
-      render :new
+      render :new, status: :unprocessable_entity
     end
   end
 
@@ -26,7 +26,19 @@ class ListingsController < ApplicationController
     redirect_to listings_path, status: :see_other
   end
 
+  def edit
+    @listing = Listing.find(params[:id])
+  end
 
+  def update
+    @listing = Listing.find(params[:id])
+    if @listing.update(listing_params)
+      @listing.update(listing_params)
+      redirect_to listing_path(@listing)
+    else
+      render :edit
+    end
+  end
 
 
   private
