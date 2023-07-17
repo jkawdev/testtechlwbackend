@@ -1,0 +1,7 @@
+<h1>Nos appartements</h1>
+<% @listings.each do |listing| %>
+  <li><%= link_to listing.num_rooms, listing_path(listing) %></li>
+<% end %>
+
+
+<%= link_to "Nouvel appartement", new_listing_path %>

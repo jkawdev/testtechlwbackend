@@ -1,0 +1,7 @@
+<div class="container">
+<%# , url: new_listing_path(@listing) %>
+  <%= simple_form_for(@listing) do |f| %>
+    <%= f.input :num_rooms, placeholder: "Numéro d'appartement", label: false %>
+    <%= f.submit " Soumettre", class: "btn btn-primary" %>
+  <% end %>
+</div>
