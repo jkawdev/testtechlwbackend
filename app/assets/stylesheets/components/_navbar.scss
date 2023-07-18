@@ -1,12 +1,21 @@
-.navbar-lewagon {
+.menu-dashboard {
+  flex: 0 0 auto;
+  height: 100%;
+  width : 250px;
+  background-color: rgb(41, 132, 212);
+  color: white;
+  box-shadow: 3px 3px 10px 10px rgba(125, 125, 125, .10);
+  display: flex;
+  position: fixed;
+  top: 0;
+  padding-inline: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+.dashboard-title {
+  display: flex;
   justify-content: space-between;
-  background: white;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+  align-items: center;
 }

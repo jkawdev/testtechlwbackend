@@ -1,0 +1,13 @@
+header {
+  // -------------------- Header item
+    $header-width: 100%;
+    margin-left: $navbar-width;
+    width: $header-width;
+    height : $header-height;
+    // background-image: url("maisons.jpg");
+    box-shadow: 3px 3px 10px 10px rgba(125, 125, 125, .10);
+    border-radius: 5px;
+    display: flex;
+    padding: 0px;
+    margin-bottom: 50px;
+}
